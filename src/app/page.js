@@ -1,113 +1,127 @@
-import Image from "next/image";
+"use client"
+import { useState, useEffect } from 'react';
+import { Button } from "@/components/ui/button"
+import { Label } from "@/components/ui/label"
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+import { Input } from "@/components/ui/input"
+import { ChevronRightIcon } from "@radix-ui/react-icons"
+import { Toggle } from "@/components/ui/toggle"
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/components/ui/tooltip"
+
+import View from "./view"
 
 export default function Home() {
+  const [language, setLanguage] = useState("English");
+  const [zip, setZip] = useState("");
+  const [county, setCounty] = useState("");
+  const [pcp, setPCP] = useState("");
+  const [view, setView] = useState("");
+
+  const checkZip = (e) => {
+    const zip = e.target.value;
+    if (zip.length == 5) {
+      const zipCodes = require("../data/zip_codes.json");
+      const result = zipCodes.filter(
+        row => row.zip == zip
+      );
+      if (result[0]) {
+        setCounty(`${result[0].county}, ${result[0].state}`);
+        setZip(zip);
+      } else {
+        setCounty("Zip Code Not Found");
+      }
+    } else {
+      setCounty(null);
+      setZip(null);
+    }
+  };
+
+  useEffect(() => {
+    if (county=="Santa Clara County, CA" && (language=="English")) {
+      setPCP("Ravenswood");
+    } else if (county=="Santa Clara County, CA" && language=="Mandarin") {
+      setPCP("NEMS");
+    } else if (county=="Santa Clara County, CA" && language=="Spanish") {
+      setPCP("Gardner");
+    } else if (county=="San Mateo County, CA") {
+      setPCP("Samaritan House");
+    } else if (county=="Alameda County, CA") {
+      setPCP("Alameda Health Systems");
+    } else {
+      setPCP("");
+      setView("");
+    }
+  }, [county, language]);
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="flex justify-center">
+      <div className="flex min-h-screen flex-col items-center justify-center w-[27rem]">
+        <h3 className="text-lg -mt-8">Welcome to the</h3>
+        <h1 className="text-3xl font-bold text-cardinal">Cardinal Free Clinics</h1>
+        <h3 className="text-xl font-semibold">Referrals</h3>
+
+        <p className="font-semibold mt-6 -ml-8 mb-2">Patient&apos;s preferred language:</p>
+        <RadioGroup 
+          defaultValue="english"
+          value={language}
+          onValueChange={setLanguage}
+          className = "flex"
+        >
+          <div className="flex items-center space-x-2">
+            <RadioGroupItem value="English" id="english" />
+            <Label htmlFor="english">English</Label>
+          </div>
+          <div className="flex items-center space-x-2">
+            <RadioGroupItem value="Mandarin" id="mandarin" />
+            <Label htmlFor="mandarin">Mandarin</Label>
+          </div>
+          <div className="flex items-center space-x-2">
+            <RadioGroupItem value="Spanish" id="spanish" />
+            <Label htmlFor="spanish">Spanish</Label>
+          </div>
+        </RadioGroup>
+
+        <div className="flex mt-4 items-center">
+          <p className="font-semibold -mt-1 mr-2">Zip code:</p>
+          <Input type="text" placeholder="Ex. 94305" value={zip} onChange={checkZip} className="text-xs h-8 w-32 focus:outline-none" />
         </div>
+
+        <p className="text-sm mt-2 h-4">{county}</p>
+        
+        <ToggleGroup value={view} onValueChange={setView} type="single" className="flex flex-col">
+          {pcp ? 
+            <ToggleGroupItem variant="outline" value="PCP" className="mt-8 w-60">
+              PCP Referral <ChevronRightIcon className="h-4 w-4" />
+            </ToggleGroupItem> :
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <ToggleGroupItem variant="outline" value="PCP" className="mt-8 w-60" disabled>
+                    PCP Referral <ChevronRightIcon className="h-4 w-4" />
+                  </ToggleGroupItem>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <> {county ?
+                    <p>No PCP found</p> : 
+                    <p>No county selected</p>
+                  } </>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+            
+          }
+          
+          <ToggleGroupItem variant="outline" value="Imaging" className="mt-2 w-60">
+            Imaging Info <ChevronRightIcon className="h-4 w-4" />
+          </ToggleGroupItem>
+          <ToggleGroupItem variant="outline" value="Labs" className="mt-2 w-60">
+            Labs Info <ChevronRightIcon className="h-4 w-4" />
+          </ToggleGroupItem>
+        </ToggleGroup>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      {view ? 
+        <View view={view} pcp={pcp} /> : null}
     </main>
   );
 }

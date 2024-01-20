@@ -18,7 +18,7 @@
       "description": "<p>For affordable primary care, we are referring you to <strong><u>Gardner Health Center</u></strong>. Gardner also offers mental health treatment, dental care, optometry, insurance counseling, and other services.</p>",
       "steps": [" The care team at Gardner will call you within the next week to register in their network.", "We will follow up with you in 2 weeks to see if you have made contact with Gardner, and we will securely fax them your medical records <strong>once you register in Gardner’s network</strong> to complete the referral process."],
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101511.34645034063!2d-121.96828842906687!3d37.33707322261956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fccc1d9c1c3f5%3A0xb4503cb37aa4170f!2sGardner%20Downtown%20Health%20Center!5e0!3m2!1sen!2sus!4v1660253356784!5m2!1sen!2sus",
-      "form": "/forms/Gardner_NEMS_Cover_Sheet.pdf"
+      "form": "/forms/Gardner_Cover_Sheet.pdf"
     },
     "Samaritan House": {
       "description": "<p>You can get a Primary Care Physician (PCP) at the <strong><u>Samaritan House Free Clinics</u></strong>.</p>",

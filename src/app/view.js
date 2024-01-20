@@ -4,12 +4,13 @@ import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Input } from "@/components/ui/input"
-import { ChevronRightIcon } from "@radix-ui/react-icons"
+import { ExternalLinkIcon } from "@radix-ui/react-icons"
 import { Toggle } from "@/components/ui/toggle"
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/components/ui/tooltip"
 
 import info from "../data/referrals_info.json";
+import { ExternalLink } from 'lucide-react';
 
 export default function View(props) {
   const { view, pcp } = props;
@@ -40,6 +41,9 @@ export default function View(props) {
       <h2 className="mt-4 text-2xl font-bold">{info[view].title}</h2>
       {view == "PCP" ?
         <div className="flex flex-col mt-4 w-full">
+          {pcp == "Alameda Health Systems" ? null : 
+          <a className="flex items-center absolute top-8 right-12 bg-cardinal px-4 py-2 rounded-md text-white hover: cursor-pointer"
+          href={`/forms/Arbor_${pcp}_Cover_Sheet.pdf`} target="_blank">Cover Sheet <ExternalLinkIcon className="ml-2" /></a>}
           <p>{info[view].description}</p>
           <div className="flex">
             <div className="border border-solid rounded-md mt-4 mr-6">
@@ -67,7 +71,7 @@ export default function View(props) {
               <div id="location-info" className="mt-3"></div>
             </div>
           </div>
-          <div className="w-full">
+          <div className="w-1/2">
             <div>
               <ul className="list-disc ml-4">
                 {info[view].instructions.all.map((item, index) => (

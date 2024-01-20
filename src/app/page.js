@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Input } from "@/components/ui/input"
-import { ChevronRightIcon } from "@radix-ui/react-icons"
+import { ChevronRightIcon, ExternalLinkIcon } from "@radix-ui/react-icons"
 import { Toggle } from "@/components/ui/toggle"
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/components/ui/tooltip"
@@ -134,6 +134,12 @@ export default function Home() {
           <ToggleGroupItem variant="outline" value="Labs" className="mt-2 w-60">
             Labs Info <ChevronRightIcon className="h-4 w-4" />
           </ToggleGroupItem>
+
+          <a className="flex items-center justify-center mt-2 w-60 border border-solid rounded-md py-2 hover:bg-slate-100	"
+          href="https://www.goodrx.com/" target="_blank">
+            <p className="text-sm font-medium">GoodRx</p>
+            <ExternalLinkIcon className="ml-2" />
+          </a>
         </ToggleGroup>
       </div>
       {view ? 

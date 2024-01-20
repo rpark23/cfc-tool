@@ -42,9 +42,9 @@ export default function View(props) {
         <div className="flex flex-col mt-4 w-full">
           <p>{info[view].description}</p>
           <div className="flex">
-            <div className="border border-solid mt-4 mr-6">
+            <div className="border border-solid rounded-md mt-4 mr-6">
               <iframe src={info[view][pcp].map} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" 
-              className="w-[30vw] h-[30vw]"/>
+              className="w-[30vw] h-[30vw] rounded-md"/>
             </div>
             <div className="w-full">
               <div className="">
@@ -62,7 +62,7 @@ export default function View(props) {
         <div className="flex mt-8 w-full">
           <div className="w-1/2 mr-8">
             <div className = "flex flex-col items-center">
-              {view == "Imaging" ? <img src="/imaging.png" /> : <img src="/labs.png" />}
+              <img src={view == "Imaging" ? "/imaging.png" : "/labs.png"} className = "rounded-md" />
               <h3 className="mt-3 font-bold text-lg">{info[view].location.title}</h3>
               <div id="location-info" className="mt-3"></div>
             </div>
@@ -77,7 +77,7 @@ export default function View(props) {
                   <li key={index} dangerouslySetInnerHTML={{ __html: item }} id={`option${index}`} className="mb-1"></li>
                 )) : null}
               </ul>
-              <div id="results" className="mt-6 border border-solid border-black rounded-md p-2"></div>
+              <div id="results" className="mt-6 border border-solid border-black rounded-md px-4 py-2"></div>
             </div>
           </div>
         </div>

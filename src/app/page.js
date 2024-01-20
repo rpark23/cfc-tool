@@ -59,7 +59,7 @@ export default function Home() {
       <div className="flex min-h-screen flex-col items-center justify-center w-[27rem]">
         <h3 className="text-lg -mt-8">Welcome to the</h3>
         <h1 className="text-3xl font-bold text-cardinal">Cardinal Free Clinics</h1>
-        <h3 className="text-xl font-semibold">Referrals</h3>
+        <h3 className="text-xl font-semibold">Referrals Tool</h3>
 
         <p className="font-semibold mt-6 -ml-8 mb-2">Patient&apos;s preferred language:</p>
         <RadioGroup 

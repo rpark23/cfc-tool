@@ -16,7 +16,7 @@
     },
     "Gardner": {
       "description": "<p>For affordable primary care, we are referring you to <strong><u>Gardner Health Center</u></strong>. Gardner also offers mental health treatment, dental care, optometry, insurance counseling, and other services.</p>",
-      "steps": ["Call (408) 457-7100 to schedule your first appointment at Gardner Health Center.", "We will follow up with you in 2 weeks to see if you have made contact with Gardner, and we will securely fax them your medical records <strong>once you register in Gardner’s network</strong> to complete the referral process."],
+      "steps": [" The care team at Gardner will call you within the next week to register in their network.", "We will follow up with you in 2 weeks to see if you have made contact with Gardner, and we will securely fax them your medical records <strong>once you register in Gardner’s network</strong> to complete the referral process."],
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101511.34645034063!2d-121.96828842906687!3d37.33707322261956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fccc1d9c1c3f5%3A0xb4503cb37aa4170f!2sGardner%20Downtown%20Health%20Center!5e0!3m2!1sen!2sus!4v1660253356784!5m2!1sen!2sus",
       "form": "/forms/Gardner_NEMS_Cover_Sheet.pdf"
     },
@@ -27,14 +27,15 @@
       "form": "/forms/Arbor_Samaritan_House_Cover_Sheet.pdf"
     },
     "Alameda Health Systems": {
-      "description": "<p>You can get a Primary Care Physician (PCP) within the <strong><u>Alameda Health System</u></strong> if you (1) reside in Alameda County, (2) are uninsured, and (3) have not been seen at Alameda Health System.</p><ul><li>Next Steps: Call (510) 437-8500 and listen through the options to schedule a financial appointment for PCP and any specialty clinics you may need in the future.</li><li>Once you connect with the doctors, let us know if they need any medical records from us and we can facilitate that process.</li></ul>",
+      "description": "<p>You can get a Primary Care Physician (PCP) within the <strong><u>Alameda Health System</u></strong> if you (1) reside in Alameda County, (2) are uninsured, and (3) have not been seen at Alameda Health System.</p>",
+      "steps": ["Call (510) 437-8500 and listen through the options to schedule a financial appointment for PCP and any specialty clinics you may need in the future.", "Once you connect with the doctors, let us know if they need any medical records from us and we can facilitate that process."],
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100894.27487791162!2d-122.28076997928983!3d37.79130315438835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f8693560bc5a1%3A0x409cfa65b47d2a20!2sAlameda%20Health%20System!5e0!3m2!1sen!2sus!4v1660253590583!5m2!1sen!2sus",
       "form": ""
     }
   },
   "Labs": {
     "title": "Labs Instructions",
-    "results": "<p>Your test results will be returned to Arbor Free Clinic, and <strong>we will call you to go over your results</strong> 1-2 Sundays after we receive results, as capacity allows.</p>",
+    "results": "<p>Your test results will be returned to the Cardinal Free Clinic, and <strong>we will call you to go over your results</strong> 1-2 weeks after we receive results, as capacity allows.</p>",
     "location": {
       "title": "Stanford Hospital - Boswell Clinic Laboratory",
       "info": "<ul><li><strong>Address</strong>: 300 Pasteur Drive, Pavilion A, Level 1, A12 Stanford, CA 94305</li><li><strong>Hours</strong>: Mon-Fri 6:00am-5:30pm, Sat-Sun 7am-3:30pm</li><li><strong>Phone</strong>: (650) 724-4750</li></ul>"
@@ -47,14 +48,14 @@
   }, 
   "Imaging": {
     "title": "Imaging Instructions",
-    "results": "<p>Your test results will be returned to Arbor Free Clinic, and <strong>we will call you to go over your results</strong> 1-2 Sundays after we receive results, as capacity allows.</p>",
+    "results": "<p>Your test results will be returned to the Cardinal Free Clinics, and <strong>we will call you to go over your results</strong> 1-2 weeks after we receive results, as capacity allows.</p>",
     "location": {
       "title": "Stanford Hospital – Radiology Registration",
       "info": "<ul><li><strong>Address</strong>: 300 Pasteur Drive, Pavilion E, Level 1, E12, Stanford, CA 94305</li><li><strong>Hours</strong>: Mon-Fri 6:45AM-5:00PM</li><li><strong>Directions</strong>: Please enter through the main hospital entrance near the fountain. Immediately after entering, take a left and proceed past the cafeteria. Turn to the left when you see the “Radiology Registration” sign (E12).</li></ul>"
     },
     "instructions": {
       "all": ["<strong>Please bring any form of <u>photo identification</u></strong>.", "This is a no cost service. <strong>If any <u>billing issues</u> come up, please call or email us</strong>.", "If any issues arise, please call us immediately at the phone number below and leave a message."],
-      "options": ["<span>If you are getting an <strong>X-ray</strong></span>, you may go to the imaging clinic at any time and <strong>do not need an appointment</strong>.<br /><strong>IMPORTANT</strong>: Please bring a printed copy of the imaging order you received from Arbor Free Clinic to your appointment.", "<span>If you are getting an <strong>CT/MRI/ultrasound</strong></span>, you will need to <strong>make an appointment</strong> at the imaging clinic. Please wait for Stanford Hospital to call you to make an appointment. If you have not received a call within a week, please call Stanford Radiology Scheduling at (650) 723-6855."],
+      "options": ["<span>If you are getting an <strong>X-ray</strong></span>, you may go to the imaging clinic at any time and <strong>do not need an appointment</strong>.<br /><strong>IMPORTANT</strong>: Please bring a printed copy of the imaging order you received from the Cardinal Free Clinics to your appointment.", "<span>If you are getting an <strong>CT/MRI/ultrasound</strong></span>, you will need to <strong>make an appointment</strong> at the imaging clinic. Please wait for Stanford Hospital to call you to make an appointment. If you have not received a call within a week, please call Stanford Radiology Scheduling at (650) 723-6855."],
       "choose": {
         "If you are getting an <strong>X-ray</strong>, ": "you may go to the imaging clinic at any time and <strong>do not need an appointment</strong>. <br/> <strong>IMPORTANT</strong>: Please bring a printed copy of the imaging order you received from the Cardinal Free Clinics to your appointment.",
         "If you are getting an <strong>CT/MRI/ultrasound</strong>, ": "you will need to <strong>make an appointment</strong> at the imaging clinic. Please wait for Stanford Hospital to call you to make an appointment. If you have not received a call within a week, please call Stanford Radiology Scheduling at (650) 723-6855."

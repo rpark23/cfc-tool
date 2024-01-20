@@ -13,7 +13,7 @@ import info from "../data/referrals_info.json";
 import { ExternalLink } from 'lucide-react';
 
 export default function View(props) {
-  const { view, pcp } = props;
+  const { view, pcp, clinic } = props;
 
   useEffect(() => {
     if (view == "PCP") {
@@ -33,7 +33,7 @@ export default function View(props) {
       }
     }
     
-  }, [view, pcp]);
+  }, [view, pcp, clinic]);
 
 
   return (
@@ -43,7 +43,7 @@ export default function View(props) {
         <div className="flex flex-col mt-4 w-full">
           {pcp == "Alameda Health Systems" ? null : 
           <a className="flex items-center absolute top-8 right-12 bg-cardinal px-4 py-2 rounded-md text-white hover: cursor-pointer"
-          href={`/forms/Arbor_${pcp.replace(" ", "_")}_Cover_Sheet.pdf`} target="_blank">Cover Sheet <ExternalLinkIcon className="ml-2" /></a>}
+          href={`/forms/${clinic}_${pcp.replace(" ", "_")}_Cover_Sheet.pdf`} target="_blank">Cover Sheet <ExternalLinkIcon className="ml-2" /></a>}
           <p>{info[view].description}</p>
           <div className="flex">
             <div className="border border-solid rounded-md mt-4 mr-6">

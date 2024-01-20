@@ -12,6 +12,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/compo
 import View from "./view"
 
 export default function Home() {
+  const [clinic, setClinic] = useState("Arbor");
   const [language, setLanguage] = useState("English");
   const [zip, setZip] = useState("");
   const [county, setCounty] = useState("");
@@ -60,8 +61,23 @@ export default function Home() {
         <h3 className="text-lg -mt-8">Welcome to the</h3>
         <h1 className="text-3xl font-bold text-cardinal">Cardinal Free Clinics</h1>
         <h3 className="text-xl font-semibold">Referrals Tool</h3>
+        <RadioGroup 
+          defaultValue="english"
+          value={clinic}
+          onValueChange={setClinic}
+          className = "flex mt-6"
+        >
+          <div className="flex items-center space-x-2">
+            <RadioGroupItem value="Arbor" id="arbor" />
+            <Label htmlFor="arbor">Arbor</Label>
+          </div>
+          <div className="flex items-center space-x-2">
+            <RadioGroupItem value="PFC" id="pfc" />
+            <Label htmlFor="pfc">PFC</Label>
+          </div>
+        </RadioGroup>
 
-        <p className="font-semibold mt-6 -ml-8 mb-2">Patient&apos;s preferred language:</p>
+        <p className="font-semibold mt-4 -ml-8 mb-2">Patient&apos;s preferred language:</p>
         <RadioGroup 
           defaultValue="english"
           value={language}
@@ -121,7 +137,7 @@ export default function Home() {
         </ToggleGroup>
       </div>
       {view ? 
-        <View view={view} pcp={pcp} /> : null}
+        <View view={view} pcp={pcp} clinic={clinic}/> : null}
     </main>
   );
 }

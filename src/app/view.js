@@ -4,15 +4,16 @@ import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Input } from "@/components/ui/input"
-import { ChevronRightIcon } from "@radix-ui/react-icons"
+import { ExternalLinkIcon } from "@radix-ui/react-icons"
 import { Toggle } from "@/components/ui/toggle"
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/components/ui/tooltip"
 
 import info from "../data/referrals_info.json";
+import { ExternalLink } from 'lucide-react';
 
 export default function View(props) {
-  const { view, pcp } = props;
+  const { view, pcp, clinic } = props;
 
   useEffect(() => {
     if (view == "PCP") {
@@ -32,7 +33,7 @@ export default function View(props) {
       }
     }
     
-  }, [view, pcp]);
+  }, [view, pcp, clinic]);
 
 
   return (
@@ -40,11 +41,14 @@ export default function View(props) {
       <h2 className="mt-4 text-2xl font-bold">{info[view].title}</h2>
       {view == "PCP" ?
         <div className="flex flex-col mt-4 w-full">
+          {pcp == "Alameda Health Systems" ? null : 
+          <a className="flex items-center absolute top-8 right-12 bg-cardinal px-4 py-2 rounded-md text-white hover: cursor-pointer"
+          href={`/forms/${clinic}_${pcp.replace(" ", "_")}_Cover_Sheet.pdf`} target="_blank">Cover Sheet <ExternalLinkIcon className="ml-2" /></a>}
           <p>{info[view].description}</p>
           <div className="flex">
-            <div className="border border-solid mt-4 mr-6">
+            <div className="border border-solid rounded-md mt-4 mr-6">
               <iframe src={info[view][pcp].map} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" 
-              className="w-[30vw] h-[30vw]"/>
+              className="w-[30vw] h-[30vw] rounded-md"/>
             </div>
             <div className="w-full">
               <div className="">
@@ -62,12 +66,12 @@ export default function View(props) {
         <div className="flex mt-8 w-full">
           <div className="w-1/2 mr-8">
             <div className = "flex flex-col items-center">
-              {view == "Imaging" ? <img src="/imaging.png" /> : <img src="/labs.png" />}
+              <img src={view == "Imaging" ? "/imaging.png" : "/labs.png"} className = "rounded-md" />
               <h3 className="mt-3 font-bold text-lg">{info[view].location.title}</h3>
               <div id="location-info" className="mt-3"></div>
             </div>
           </div>
-          <div className="w-full">
+          <div className="w-1/2">
             <div>
               <ul className="list-disc ml-4">
                 {info[view].instructions.all.map((item, index) => (
@@ -77,7 +81,7 @@ export default function View(props) {
                   <li key={index} dangerouslySetInnerHTML={{ __html: item }} id={`option${index}`} className="mb-1"></li>
                 )) : null}
               </ul>
-              <div id="results" className="mt-6 border border-solid border-black rounded-md p-2"></div>
+              <div id="results" className="mt-6 border border-solid border-black rounded-md px-4 py-2"></div>
             </div>
           </div>
         </div>

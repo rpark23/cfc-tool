@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Input } from "@/components/ui/input"
-import { ChevronRightIcon } from "@radix-ui/react-icons"
+import { ChevronRightIcon, ExternalLinkIcon } from "@radix-ui/react-icons"
 import { Toggle } from "@/components/ui/toggle"
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/components/ui/tooltip"
@@ -12,6 +12,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@/compo
 import View from "./view"
 
 export default function Home() {
+  const [clinic, setClinic] = useState("Arbor");
   const [language, setLanguage] = useState("English");
   const [zip, setZip] = useState("");
   const [county, setCounty] = useState("");
@@ -59,9 +60,24 @@ export default function Home() {
       <div className="flex min-h-screen flex-col items-center justify-center w-[27rem]">
         <h3 className="text-lg -mt-8">Welcome to the</h3>
         <h1 className="text-3xl font-bold text-cardinal">Cardinal Free Clinics</h1>
-        <h3 className="text-xl font-semibold">Referrals</h3>
+        <h3 className="text-xl font-semibold">Referrals Tool</h3>
+        <RadioGroup 
+          defaultValue="english"
+          value={clinic}
+          onValueChange={setClinic}
+          className = "flex mt-6"
+        >
+          <div className="flex items-center space-x-2">
+            <RadioGroupItem value="Arbor" id="arbor" />
+            <Label htmlFor="arbor">Arbor</Label>
+          </div>
+          <div className="flex items-center space-x-2">
+            <RadioGroupItem value="PFC" id="pfc" />
+            <Label htmlFor="pfc">PFC</Label>
+          </div>
+        </RadioGroup>
 
-        <p className="font-semibold mt-6 -ml-8 mb-2">Patient&apos;s preferred language:</p>
+        <p className="font-semibold mt-4 -ml-8 mb-2">Patient&apos;s preferred language:</p>
         <RadioGroup 
           defaultValue="english"
           value={language}
@@ -118,10 +134,16 @@ export default function Home() {
           <ToggleGroupItem variant="outline" value="Labs" className="mt-2 w-60">
             Labs Info <ChevronRightIcon className="h-4 w-4" />
           </ToggleGroupItem>
+
+          <a className="flex items-center justify-center mt-2 w-60 border border-solid rounded-md py-2 hover:bg-slate-100	"
+          href="https://www.goodrx.com/" target="_blank">
+            <p className="text-sm font-medium">GoodRx</p>
+            <ExternalLinkIcon className="ml-2" />
+          </a>
         </ToggleGroup>
       </div>
       {view ? 
-        <View view={view} pcp={pcp} /> : null}
+        <View view={view} pcp={pcp} clinic={clinic}/> : null}
     </main>
   );
 }

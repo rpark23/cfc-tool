@@ -149,43 +149,47 @@
     }
   },
   "Labs": {
-    "title": "Labs Instructions",
-    "results": "<p>Your test results will be returned to the Cardinal Free Clinic, and <strong>we will call you to go over your results</strong> 1-2 weeks after we receive results, as capacity allows.</p>",
-    "location": {
-      "title": "Stanford Hospital - Boswell Clinic Laboratory",
-      "info": "<ul><li><strong>Address</strong>: 300 Pasteur Drive, Pavilion A, Level 1, A12 Stanford, CA 94305</li><li><strong>Hours</strong>: Mon-Fri 6:00am-5:30pm, Sat-Sun 7am-3:30pm</li><li><strong>Phone</strong>: (650) 724-4750</li></ul>"
-    },
-    "instructions": {
-      "fasting": "<li>Please remember to fast for 10 hours prior to visiting the lab. It is ok to drink water.</li>",
-      "noFasting": "<li>You do not need to fast.</li>",
-      "all": [
-        "You may go to the lab at any time and <strong>do not need an appointment,</strong> but we <u>recommend that you call the lab ahead of your visit</u> to make sure they have received your lab orders.",
-        "If the clinical labs cannot find your orders, let them know they were sent via fax. Please call us immediately at the phone number below and leave a message if any issues arise.",
-        "Please bring any form of <strong><u>photo identification</u></strong>.",
-        "This is a <strong>no cost</strong> service. <strong>If any billing issues come up, please call or email us</strong>."
-      ]
+    "English": {
+      "title": "Labs Instructions",
+      "results": "<p>Your test results will be returned to the Cardinal Free Clinic, and <strong>we will call you to go over your results</strong> 1-2 weeks after we receive results, as capacity allows.</p>",
+      "location": {
+        "title": "Stanford Hospital - Boswell Clinic Laboratory",
+        "info": "<ul><li><strong>Address</strong>: 300 Pasteur Drive, Pavilion A, Level 1, A12 Stanford, CA 94305</li><li><strong>Hours</strong>: Mon-Fri 6:00am-5:30pm, Sat-Sun 7am-3:30pm</li><li><strong>Phone</strong>: (650) 724-4750</li></ul>"
+      },
+      "instructions": {
+        "fasting": "<li>Please remember to fast for 10 hours prior to visiting the lab. It is ok to drink water.</li>",
+        "noFasting": "<li>You do not need to fast.</li>",
+        "all": [
+          "You may go to the lab at any time and <strong>do not need an appointment,</strong> but we <u>recommend that you call the lab ahead of your visit</u> to make sure they have received your lab orders.",
+          "If the clinical labs cannot find your orders, let them know they were sent via fax. Please call us immediately at the phone number below and leave a message if any issues arise.",
+          "Please bring any form of <strong><u>photo identification</u></strong>.",
+          "This is a <strong>no cost</strong> service. <strong>If any billing issues come up, please call or email us</strong>."
+        ]
+      }
     }
   },
   "Imaging": {
-    "title": "Imaging Instructions",
-    "results": "<p>Your test results will be returned to the Cardinal Free Clinics, and <strong>we will call you to go over your results</strong> 1-2 weeks after we receive results, as capacity allows.</p>",
-    "location": {
-      "title": "Stanford Hospital – Radiology Registration",
-      "info": "<ul><li><strong>Address</strong>: 300 Pasteur Drive, Pavilion E, Level 1, E12, Stanford, CA 94305</li><li><strong>Hours</strong>: Mon-Fri 6:45AM-5:00PM</li><li><strong>Directions</strong>: Please enter through the main hospital entrance near the fountain. Immediately after entering, take a left and proceed past the cafeteria. Turn to the left when you see the “Radiology Registration” sign (E12).</li></ul>"
-    },
-    "instructions": {
-      "all": [
-        "<strong>Please bring any form of <u>photo identification</u></strong>.",
-        "This is a no cost service. <strong>If any <u>billing issues</u> come up, please call or email us</strong>.",
-        "If any issues arise, please call us immediately at the phone number below and leave a message."
-      ],
-      "options": [
-        "<span>If you are getting an <strong>X-ray</strong></span>, you may go to the imaging clinic at any time and <strong>do not need an appointment</strong>.<br /><strong>IMPORTANT</strong>: Please bring a printed copy of the imaging order you received from the Cardinal Free Clinics to your appointment.",
-        "<span>If you are getting an <strong>CT/MRI/ultrasound</strong></span>, you will need to <strong>make an appointment</strong> at the imaging clinic. Please wait for Stanford Hospital to call you to make an appointment. If you have not received a call within a week, please call Stanford Radiology Scheduling at (650) 723-6855."
-      ],
-      "choose": {
-        "If you are getting an <strong>X-ray</strong>, ": "you may go to the imaging clinic at any time and <strong>do not need an appointment</strong>. <br/> <strong>IMPORTANT</strong>: Please bring a printed copy of the imaging order you received from the Cardinal Free Clinics to your appointment.",
-        "If you are getting an <strong>CT/MRI/ultrasound</strong>, ": "you will need to <strong>make an appointment</strong> at the imaging clinic. Please wait for Stanford Hospital to call you to make an appointment. If you have not received a call within a week, please call Stanford Radiology Scheduling at (650) 723-6855."
+    "English": {
+      "title": "Imaging Instructions",
+      "results": "<p>Your test results will be returned to the Cardinal Free Clinics, and <strong>we will call you to go over your results</strong> 1-2 weeks after we receive results, as capacity allows.</p>",
+      "location": {
+        "title": "Stanford Hospital – Radiology Registration",
+        "info": "<ul><li><strong>Address</strong>: 300 Pasteur Drive, Pavilion E, Level 1, E12, Stanford, CA 94305</li><li><strong>Hours</strong>: Mon-Fri 6:45AM-5:00PM</li><li><strong>Directions</strong>: Please enter through the main hospital entrance near the fountain. Immediately after entering, take a left and proceed past the cafeteria. Turn to the left when you see the “Radiology Registration” sign (E12).</li></ul>"
+      },
+      "instructions": {
+        "all": [
+          "<strong>Please bring any form of <u>photo identification</u></strong>.",
+          "This is a no cost service. <strong>If any <u>billing issues</u> come up, please call or email us</strong>.",
+          "If any issues arise, please call us immediately at the phone number below and leave a message."
+        ],
+        "options": [
+          "<span>If you are getting an <strong>X-ray</strong></span>, you may go to the imaging clinic at any time and <strong>do not need an appointment</strong>.<br /><strong>IMPORTANT</strong>: Please bring a printed copy of the imaging order you received from the Cardinal Free Clinics to your appointment.",
+          "<span>If you are getting an <strong>CT/MRI/ultrasound</strong></span>, you will need to <strong>make an appointment</strong> at the imaging clinic. Please wait for Stanford Hospital to call you to make an appointment. If you have not received a call within a week, please call Stanford Radiology Scheduling at (650) 723-6855."
+        ],
+        "choose": {
+          "If you are getting an <strong>X-ray</strong>, ": "you may go to the imaging clinic at any time and <strong>do not need an appointment</strong>. <br/> <strong>IMPORTANT</strong>: Please bring a printed copy of the imaging order you received from the Cardinal Free Clinics to your appointment.",
+          "If you are getting an <strong>CT/MRI/ultrasound</strong>, ": "you will need to <strong>make an appointment</strong> at the imaging clinic. Please wait for Stanford Hospital to call you to make an appointment. If you have not received a call within a week, please call Stanford Radiology Scheduling at (650) 723-6855."
+        }
       }
     }
   }

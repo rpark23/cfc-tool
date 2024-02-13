@@ -23,12 +23,12 @@ export default function View(props) {
     }
     if (view == "Imaging" || view == "Labs") {
       const location_info = document.getElementById("location-info");
-      location_info.innerHTML = info[view].location.info;
+      location_info.innerHTML = info[view][pageLanguage].location.info;
       const results = document.getElementById("results");
-      results.innerHTML = info[view].results;
+      results.innerHTML = info[view][pageLanguage].results;
     }
     if (view == "Imaging") {
-      for (var i=0; i<info[view].instructions.options.length; i++) {
+      for (var i=0; i<info[view][pageLanguage].instructions.options.length; i++) {
         var option = document.getElementById(`option${i}`);
         option.children[0].className = "text-red-700";
       }
@@ -51,7 +51,7 @@ export default function View(props) {
 
   return (
     <div className="flex min-h-screen flex-col items-center w-[calc(100vw-27rem)] bg-slate-50 p-10">
-      <h2 className="mt-4 text-2xl font-bold">{info[view]["English"].title}</h2>
+      <h2 className="mt-4 text-2xl font-bold">{info[view][pageLanguage].title}</h2>
       {view == "PCP" ?
         <div className="flex flex-col mt-4 w-full">
           {language == "English" ? null :
@@ -87,17 +87,17 @@ export default function View(props) {
           <div className="w-1/2 mr-8">
             <div className = "flex flex-col items-center">
               <img src={view == "Imaging" ? "/imaging.png" : "/labs.png"} className = "rounded-md" />
-              <h3 className="mt-3 font-bold text-lg">{info[view].location.title}</h3>
+              <h3 className="mt-3 font-bold text-lg">{info[view][pageLanguage].location.title}</h3>
               <div id="location-info" className="mt-3"></div>
             </div>
           </div>
           <div className="w-1/2">
             <div>
               <ul className="list-disc ml-4">
-                {info[view].instructions.all.map((item, index) => (
+                {info[view][pageLanguage].instructions.all.map((item, index) => (
                   <li key={index} dangerouslySetInnerHTML={{ __html: item }} className="mb-1"></li>
                 ))}
-                {view == "Imaging" ? info[view].instructions.options.map((item, index) => (
+                {view == "Imaging" ? info[view][pageLanguage].instructions.options.map((item, index) => (
                   <li key={index} dangerouslySetInnerHTML={{ __html: item }} id={`option${index}`} className="mb-1"></li>
                 )) : null}
               </ul>

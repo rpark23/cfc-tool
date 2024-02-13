@@ -72,7 +72,7 @@ export default function View(props) {
               <div className="w-full">
                 <div className="">
                   <div id="pcp-info" className="mt-4"></div>
-                  <h2 className="mt-4 font-bold text-lg">Next steps:</h2>
+                  <h2 className="mt-4 font-bold text-lg">{info[view][pageLanguage].nextsteps}</h2>
                   <ul className="list-disc ml-4">
                     {info[view][pageLanguage][pcp].steps.map((item, index) => (
                       <li key={index} dangerouslySetInnerHTML={{ __html: item }} className="mb-1"></li>

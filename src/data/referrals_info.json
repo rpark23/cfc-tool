@@ -51,7 +51,7 @@
     },
     "Mandarin": {
       "title": "转诊说明",
-      "description": "Arbor Free Clinic 免费诊所的资源有限。同一位患者在我们的诊所就诊数次后会被转诊以接受长期医疗照护。因为患者每次来就诊时通常会看不同的医生，所以我们也无法为患者提供良好的持续性医疗照护。而在其他诊所，同一名初级保健医生却可以更有效地长期管理您的健康。",
+      "description": "Cardinal Free Clinic 免费诊所的资源有限。同一位患者在我们的诊所就诊数次后会被转诊以接受长期医疗照护。因为患者每次来就诊时通常会看不同的医生，所以我们也无法为患者提供良好的持续性医疗照护。而在其他诊所，同一名初级保健医生却可以更有效地长期管理您的健康。",
       "nextsteps": "后续步骤:",
       "Ravenswood": {
         "description": "<p>考虑到初级保健费用的可负担性，我们将您转诊至<strong><u>Ravenswood (Mayview) Family Health Center</u></strong>。 Ravenswood 还提供牙科护理、验光、保险咨询和其他服务。对于没有保险的患者，他们提供浮动收费。</p>",
@@ -100,7 +100,7 @@
     },
     "Spanish": {
       "title": "Instrucciones con respecto a las remisiones a un médico",
-      "description": "Nuestros recursos en la clínica gratuita de Arbor son limitados y nuestra clínica está diseñada para atender pacientes solo por unas cuantas consultas mientras se les remite a una opción de atención a largo plazo. No tenemos la capacidad de ofrecer a los pacientes continuidad médica con el mismo profesional, ya que en cada visita los pacientes suelen tener un médico diferente. Un único médico de cabecera en otra clínica puede atender sus problemas de salud mucho mejor ya que lo puede atender a largo plazo.",
+      "description": "Nuestros recursos en la clínica gratuita de Cardinal son limitados y nuestra clínica está diseñada para atender pacientes solo por unas cuantas consultas mientras se les remite a una opción de atención a largo plazo. No tenemos la capacidad de ofrecer a los pacientes continuidad médica con el mismo profesional, ya que en cada visita los pacientes suelen tener un médico diferente. Un único médico de cabecera en otra clínica puede atender sus problemas de salud mucho mejor ya que lo puede atender a largo plazo.",
       "nextsteps": "Siguientes Pasos:",
       "Ravenswood": {
         "description": "<p>Para que obtenga atención primaria a bajo costo, lo remitimos al centro de salud <strong><u>Ravenswood Family Health Center</u></strong>. El centro Ravenswood también cuenta con servicios de odontología, optometría, asesoramiento sobre seguros médicos y otros servicios. El centro opera con tarifas variables según una tabla de condiciones para atender a aquellos pacientes que no tienen seguro médico.</p>",

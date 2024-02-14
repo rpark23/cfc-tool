@@ -84,6 +84,11 @@ export default function View(props) {
           </div>
         </div> : 
         <div className="flex mt-8 w-full">
+            {language == "English" ? null :
+              <button onClick={handleTranslate} className="flex items-center absolute top-8 left-108 bg-cardinal px-4 py-2 rounded-md text-white hover: cursor-pointer">
+                {handleTranslateText()}
+              </button>
+            } 
           <div className="w-1/2 mr-8">
             <div className = "flex flex-col items-center">
               <img src={view == "Imaging" ? "/imaging.png" : "/labs.png"} className = "rounded-md" />

@@ -50,7 +50,7 @@
       }
     },
     "Mandarin": {
-      "title": "Translation: 转诊说明",
+      "title": "转诊说明",
       "description": "Arbor Free Clinic 免费诊所的资源有限。同一位患者在我们的诊所就诊数次后会被转诊以接受长期医疗照护。因为患者每次来就诊时通常会看不同的医生，所以我们也无法为患者提供良好的持续性医疗照护。而在其他诊所，同一名初级保健医生却可以更有效地长期管理您的健康。",
       "nextsteps": "后续步骤:",
       "Ravenswood": {
@@ -99,7 +99,7 @@
       }
     },
     "Spanish": {
-      "title": "Translation: Instrucciones con respecto a las remisiones a un médico",
+      "title": "Instrucciones con respecto a las remisiones a un médico",
       "description": "Nuestros recursos en la clínica gratuita de Arbor son limitados y nuestra clínica está diseñada para atender pacientes solo por unas cuantas consultas mientras se les remite a una opción de atención a largo plazo. No tenemos la capacidad de ofrecer a los pacientes continuidad médica con el mismo profesional, ya que en cada visita los pacientes suelen tener un médico diferente. Un único médico de cabecera en otra clínica puede atender sus problemas de salud mucho mejor ya que lo puede atender a largo plazo.",
       "nextsteps": "Siguientes Pasos:",
       "Ravenswood": {
@@ -166,6 +166,42 @@
           "This is a <strong>no cost</strong> service. <strong>If any billing issues come up, please call or email us</strong>."
         ]
       }
+    },
+    "Mandarin": {
+      "title": "化验室检查说明",
+      "results": "<p>您的测试结果将返回到 Cardinal Free Clinic，并且在我们收到结果后 1-2 周内<strong>我们会致电您查看结果</strong>如果容量允许。</p>",
+      "location": {
+        "title": "Stanford医院 - Boswell Clinic实验室",
+        "info": "<ul><li><strong>地址</strong>: 300 Pasteur Drive, Pavilion A, Level 1, A12 Stanford, CA 94305</li><li><strong>工作时间</strong>：周一至周五上午 6:00 至下午 5:30，周六至周日上午 7 点至下午 3:30</li><li><strong>电话</strong>：(650) 724-4750 </li></ul>"
+      },
+      "instructions": {
+        "fasting": "<li>请记住在前往化验室检测之前禁食 10 小时，可以喝水。</li>",
+        "noFasting": "<li>请记得您不需要禁食。</li>",
+        "all": [
+          "您可以随时前往实验室，并且<strong>不需要预约</strong>，但我们<u>建议您在访问之前致电实验室</u>，以确保他们已收到您的实验室订单。",
+          "如果临床实验室找不到您的订单，请告知他们这些订单是通过传真发送的。 如果出现任何问题，请立即拨打以下电话号码联系我们并留言。",
+          "请携带任何形式的<strong><u>带照片的身份证明</u></strong>。",
+          "这是一项<strong>免费</strong>服务。 <strong>如果出现任何结算问题，请致电或发送电子邮件给我们</strong>。"
+        ]
+      }
+    },
+    "Spanish": {
+      "title": "Instrucciones de Laboratorio",
+      "results": "<p>Los resultados de su prueba se devolverán a Cardinal Free Clinic y <strong>lo llamaremos para revisarlos</strong> 1 o 2 semanas después de recibirlos, según lo permita la capacidad.</p>",
+      "location": {
+        "title": "Hospital Stanford - Boswell Clinic Laboratorio",
+        "info": "<ul><li><strong>Dirección</strong>: 300 Pasteur Drive, Pavilion A, Level 1, A12 Stanford, CA 94305</li><li><strong>Horario</strong>: lunes a viernes 6:00 am-5:30 pm, sábados y domingos 7am-3:30 pm</li><li><strong>Teléfono</strong>: (650) 724-4750</li></ul>"
+      },
+      "instructions": {
+        "fasting": "<li>Recuerde ayunar durante 10 horas antes de visitar el laboratorio. Está bien beber agua.</li>",
+        "noFasting": "<li>No necesitas ayunar.</li>",
+        "all": [
+          "Puede ir al laboratorio en cualquier momento y <strong>no necesita una cita</strong>, pero <u>recomendamos que llame al laboratorio antes de su visita</u> para asegurarse de que hayan recibido sus pedidos de laboratorio.",
+          "Si los laboratorios clínicos no pueden encontrar sus pedidos, infórmeles que fueron enviados por fax. Llámenos inmediatamente al número de teléfono que aparece a continuación y deje un mensaje si surge algún problema.",
+          "Traiga cualquier tipo de <strong><u>identificación con fotografía</u></strong>.",
+          "Este es un servicio <strong>sin costo</strong>. <strong>Si surge algún problema de facturación, llámenos o envíenos un correo electrónico</strong>."
+        ]
+      }
     }
   },
   "Imaging": {
@@ -189,6 +225,52 @@
         "choose": {
           "If you are getting an <strong>X-ray</strong>, ": "you may go to the imaging clinic at any time and <strong>do not need an appointment</strong>. <br/> <strong>IMPORTANT</strong>: Please bring a printed copy of the imaging order you received from the Cardinal Free Clinics to your appointment.",
           "If you are getting an <strong>CT/MRI/ultrasound</strong>, ": "you will need to <strong>make an appointment</strong> at the imaging clinic. Please wait for Stanford Hospital to call you to make an appointment. If you have not received a call within a week, please call Stanford Radiology Scheduling at (650) 723-6855."
+        }
+      }
+    },
+    "Mandarin": {
+      "title": "影像学检查说明",
+      "results": "<p>您的测试结果将返回到 Cardinal Free Clinic，并且在收到结果后 1-2 周内<strong>我们会致电您查看结果</strong>如果容量允许。</p>",
+      "location": {
+        "title": "Stanford医院 – 放射科注册",
+        "info": "<ul><li><strong>地址</strong>: 300 Pasteur Drive, Pavilion E, Level 1, E12, Stanford, CA 94305</li><li><strong>时间</strong>：周一至周五 6:45AM-5:00PM</li><li><strong>路线</strong>：请从喷泉附近的医院主入口进入。 进入后立即左转，经过自助餐厅。 当您看到“放射科登记”标志（E12）时向左转。</li></ul>"
+      },
+      "instructions": {
+        "all": [
+          "<strong>请携带任何形式的<u>带照片的身份证明</u></strong>。",
+          "这是一项免费服务。 <strong>如果出现任何<u>结算问题</u>，请致电或发送电子邮件给我们</strong>。",
+          "如果出现任何问题，请立即拨打以下电话号码联系我们并留言。"
+        ],
+        "options": [
+          "<span>如果您要做<strong>X光检查</strong></span>，您可以随时前往影像诊所，<strong>不需要预约</strong>。<br/><strong>重要提示</strong>：前往检查时请携带一份您从 Cardinal Free Clinic 收到的影像检验单的打印副本。",
+          "<span>如果您要接受<strong>CT/MRI/超声检查</strong></span>，您需要在影像诊所<strong>预约</strong>。 请等待斯坦福医院给您打电话预约。 如果您在一周内没有接到电话，请致电斯坦福放射科调度中心：(650) 723-6855。"
+        ],
+        "choose": {
+          "If you are getting an <strong>X-ray</strong>, ": "您可以随时前往影像诊所，<strong>不需要预约</strong>。<br/><strong>重要提示</strong>：前往检查时请携带一份您从 Cardinal Free Clinic 收到的影像检验单的打印副本。",
+          "If you are getting an <strong>CT/MRI/ultrasound</strong>, ": "您需要在影像诊所<strong>预约</strong>。 请等待斯坦福医院给您打电话预约。 如果您在一周内没有接到电话，请致电斯坦福放射科调度中心：(650) 723-6855。"
+        }
+      }
+    },
+    "Spanish": {
+      "title": "Instrucciones sobre los Estudios por Imagen",
+      "results": "<p>Los resultados de su prueba se enviarán a Cardinal Free Clinics y <strong>lo llamaremos para revisarlos</strong> 1 o 2 semanas después de recibirlos, según lo permita la capacidad.</p>",
+      "location": {
+        "title": "Hospital Stanford – Registro de Radiología",
+        "info": "<ul><li><strong>Dirección</strong>: 300 Pasteur Drive, Pavilion E, Level 1, E12, Stanford, CA 94305</li><li><strong>Horario</strong>: de lunes a viernes 6:45 a. m. a 5:00 p. m.</li><li><strong>Indicaciones</strong>: ingrese por la entrada principal del hospital cerca de la fuente. Inmediatamente después de entrar, gire a la izquierda y pase la cafetería. Gire a la izquierda cuando vea el cartel de “Registro de Radiología” (E12).</li></ul>"
+      },
+      "instructions": {
+        "all": [
+          "<strong>Traiga cualquier forma de <u>identificación con fotografía</u></strong>.",
+          "Este es un servicio sin costo. <strong>Si surge algún <u>problema de facturación</u>, llámenos o envíenos un correo electrónico</strong>.",
+          "Si surge algún problema, llámenos inmediatamente al número de teléfono que aparece a continuación y deje un mensaje."
+        ],
+        "options": [
+          "<span>Si le van a hacer una <strong>radiografía</strong></span>, puede ir a la clínica de imágenes en cualquier momento y <strong>no necesita una cita</strong>.<br / ><strong>IMPORTANTE</strong>: Lleve a su cita una copia impresa de la orden de imágenes que recibió de Cardinal Free Clinics.",
+          "<span>Si le van a realizar una <strong>CT/MRI/ultrasonido</strong></span>, deberá <strong>programar una cita</strong> en la clínica de imágenes. Espere a que Stanford Hospital lo llame para programar una cita. Si no ha recibido una llamada dentro de una semana, llame a Stanford Radiology Scheduling al (650) 723-6855."
+        ],
+        "choose": {
+          "If you are getting an <strong>X-ray</strong>, ": "puede ir a la clínica de imágenes en cualquier momento y <strong>no necesita una cita</strong>.<br / ><strong>IMPORTANTE</strong>: Lleve a su cita una copia impresa de la orden de imágenes que recibió de Cardinal Free Clinics.",
+          "If you are getting an <strong>CT/MRI/ultrasound</strong>, ": "deberá <strong>programar una cita</strong> en la clínica de imágenes. Espere a que Stanford Hospital lo llame para programar una cita. Si no ha recibido una llamada dentro de una semana, llame a Stanford Radiology Scheduling al (650) 723-6855."
         }
       }
     }

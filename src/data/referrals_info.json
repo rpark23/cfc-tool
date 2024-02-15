@@ -1,64 +1,277 @@
 {
   "PCP": {
-    "title": "Primary Care Referral",
-    "description": "Our resources at the Cardinal Free Clinics are limited and our clinic is designed to only see patients a few times before referring them to a long-term care option. We also cannot provide patients with good continuity of care since patients will typically see a different doctor on each visit. A single primary care physician at another clinic can much more effectively manage your health over time.",
-    "Ravenswood": {
-      "description": "<p>Therefore, we are referring you to <strong><u>Ravenswood (Mayview) Family Health Center</u></strong>. Ravenswood also offers dental care, optometry, insurance counseling, and other services. For uninsured patients, they operate on a sliding scale.</p>",
-      "steps": ["Be on the lookout for a call from Ravenswood, but if you don’t receive it within a week, call (650) 330-7416.", "We will follow up with you in 2 weeks to see if you have made contact with Ravenswood."],
-      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d203038.43452159798!2d-122.14419364956335!3d37.3312490400011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb64bc9cafd1f%3A0x5ed9b0fb90f442fc!2sMayview%20Community%20Health%20Center!5e0!3m2!1sen!2sus!4v1660252946209!5m2!1sen!2sus",
-      "form": "/forms/Arbor_Ravenswood_Cover_Sheet.pdf"
-    }, 
-    "NEMS": {
-      "description": "<p>For affordable primary care, we are referring you to <strong><u>North East Medical Services (NEMS)</u></strong>. They can help with immunizations, referrals, and finding resources. They provide a sliding fee scale structure for medical care to be affordable and accessible to all. (When enrolled, patients pay between $5 to $40 per visit. NEMS also helps enroll patients into health insurance programs, if they are uninsured.) You can find more information in the attached handout. We will fax your referral in the next couple of days.</p>",
-      "steps": ["Call (408)-573-9686 (ext. 8160) within the next week to register in their network. For more information on how to register, see <a href='https://nems.org/' rel='noopener noreferrer' target='_blank'>this website</a>.", "We will follow up with you in 2 weeks to see if you were able to successfully register, and fax our records soon after confirmation."],
-      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25362.659867256756!2d-121.91728840145349!3d37.381968667146594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcc1cbab2f0ff%3A0xa454a1c3848c0b09!2sNorth%20East%20Medical%20Services%20(NEMS)!5e0!3m2!1sen!2sus!4v1660251144322!5m2!1sen!2sus",
-      "form": "/forms/Arbor_NEMS_Cover_Sheet.pdf"
+    "English": {
+      "title": "Primary Care Referral",
+      "description": "Our resources at the Cardinal Free Clinics are limited and our clinic is designed to only see patients a few times before referring them to a long-term care option. We also cannot provide patients with good continuity of care since patients will typically see a different doctor on each visit. A single primary care physician at another clinic can much more effectively manage your health over time.",
+      "nextsteps": "Next Steps:",
+      "Ravenswood": {
+        "description": "<p>Therefore, we are referring you to <strong><u>Ravenswood (Mayview) Family Health Center</u></strong>. Ravenswood also offers dental care, optometry, insurance counseling, and other services. For uninsured patients, they operate on a sliding scale.</p>",
+        "steps": [
+          "Be on the lookout for a call from Ravenswood, but if you don’t receive it within a week, call (650) 330-7416.",
+          "We will follow up with you in 2 weeks to see if you have made contact with Ravenswood."
+        ],
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d203038.43452159798!2d-122.14419364956335!3d37.3312490400011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb64bc9cafd1f%3A0x5ed9b0fb90f442fc!2sMayview%20Community%20Health%20Center!5e0!3m2!1sen!2sus!4v1660252946209!5m2!1sen!2sus",
+        "form": "/forms/Arbor_Ravenswood_Cover_Sheet.pdf"
+      },
+      "NEMS": {
+        "description": "<p>For affordable primary care, we are referring you to <strong><u>North East Medical Services (NEMS)</u></strong>. They can help with immunizations, referrals, and finding resources. They provide a sliding fee scale structure for medical care to be affordable and accessible to all. (When enrolled, patients pay between $5 to $40 per visit. NEMS also helps enroll patients into health insurance programs, if they are uninsured.) You can find more information in the attached handout. We will fax your referral in the next couple of days.</p>",
+        "steps": [
+          "Call (408)-573-9686 (ext. 8160) within the next week to register in their network. For more information on how to register, see <a href='https://nems.org/' rel='noopener noreferrer' target='_blank'>this website</a>.",
+          "We will follow up with you in 2 weeks to see if you were able to successfully register, and fax our records soon after confirmation."
+        ],
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25362.659867256756!2d-121.91728840145349!3d37.381968667146594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcc1cbab2f0ff%3A0xa454a1c3848c0b09!2sNorth%20East%20Medical%20Services%20(NEMS)!5e0!3m2!1sen!2sus!4v1660251144322!5m2!1sen!2sus",
+        "form": "/forms/Arbor_NEMS_Cover_Sheet.pdf"
+      },
+      "Gardner": {
+        "description": "<p>For affordable primary care, we are referring you to <strong><u>Gardner Health Center</u></strong>. Gardner also offers mental health treatment, dental care, optometry, insurance counseling, and other services.</p>",
+        "steps": [
+          " The care team at Gardner will call you within the next week to register in their network.",
+          "We will follow up with you in 2 weeks to see if you have made contact with Gardner, and we will securely fax them your medical records <strong>once you register in Gardner’s network</strong> to complete the referral process."
+        ],
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101511.34645034063!2d-121.96828842906687!3d37.33707322261956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fccc1d9c1c3f5%3A0xb4503cb37aa4170f!2sGardner%20Downtown%20Health%20Center!5e0!3m2!1sen!2sus!4v1660253356784!5m2!1sen!2sus",
+        "form": "/forms/Gardner_Cover_Sheet.pdf"
+      },
+      "Samaritan House": {
+        "description": "<p>You can get a Primary Care Physician (PCP) at the <strong><u>Samaritan House Free Clinics</u></strong>.</p>",
+        "steps": [
+          "You will receive a call from Samaritan House to set up an appointment. If you do not receive a call within one week, call (650) 347-3648 to set up an appointment with one of their case managers."
+        ],
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25333.94327572666!2d-122.21644343873042!3d37.4667916115159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fa36e73aa184b%3A0x8c34c5bb64b0ef0d!2sSamaritan%20House%20Free%20Clinic!5e0!3m2!1sen!2sus!4v1660253468943!5m2!1sen!2sus",
+        "form": "/forms/Arbor_Samaritan_House_Cover_Sheet.pdf"
+      },
+      "Alameda Health Systems": {
+        "description": "<p>You can get a Primary Care Physician (PCP) within the <strong><u>Alameda Health System</u></strong> if you (1) reside in Alameda County, (2) are uninsured, and (3) have not been seen at Alameda Health System.</p>",
+        "steps": [
+          "Call (510) 437-8500 and listen through the options to schedule a financial appointment for PCP and any specialty clinics you may need in the future.",
+          "Once you connect with the doctors, let us know if they need any medical records from us and we can facilitate that process."
+        ],
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100894.27487791162!2d-122.28076997928983!3d37.79130315438835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f8693560bc5a1%3A0x409cfa65b47d2a20!2sAlameda%20Health%20System!5e0!3m2!1sen!2sus!4v1660253590583!5m2!1sen!2sus",
+        "form": ""
+      }
     },
-    "Gardner": {
-      "description": "<p>For affordable primary care, we are referring you to <strong><u>Gardner Health Center</u></strong>. Gardner also offers mental health treatment, dental care, optometry, insurance counseling, and other services.</p>",
-      "steps": [" The care team at Gardner will call you within the next week to register in their network.", "We will follow up with you in 2 weeks to see if you have made contact with Gardner, and we will securely fax them your medical records <strong>once you register in Gardner’s network</strong> to complete the referral process."],
-      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101511.34645034063!2d-121.96828842906687!3d37.33707322261956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fccc1d9c1c3f5%3A0xb4503cb37aa4170f!2sGardner%20Downtown%20Health%20Center!5e0!3m2!1sen!2sus!4v1660253356784!5m2!1sen!2sus",
-      "form": "/forms/Gardner_Cover_Sheet.pdf"
+    "Mandarin": {
+      "title": "转诊说明",
+      "description": "Cardinal Free Clinic 免费诊所的资源有限。同一位患者在我们的诊所就诊数次后会被转诊以接受长期医疗照护。因为患者每次来就诊时通常会看不同的医生，所以我们也无法为患者提供良好的持续性医疗照护。而在其他诊所，同一名初级保健医生却可以更有效地长期管理您的健康。",
+      "nextsteps": "后续步骤:",
+      "Ravenswood": {
+        "description": "<p>考虑到初级保健费用的可负担性，我们将您转诊至<strong><u>Ravenswood (Mayview) Family Health Center</u></strong>。 Ravenswood 还提供牙科护理、验光、保险咨询和其他服务。对于没有保险的患者，他们提供浮动收费。</p>",
+        "steps": [
+          "请留意来自 Ravenswood 的电话。如果您在一周内仍未收到电话，请致电 (650) 330-7416。",
+          "我们会在两周后与您联系，了解您是否已与 Ravenswood 联系上。"
+        ],
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d203038.43452159798!2d-122.14419364956335!3d37.3312490400011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb64bc9cafd1f%3A0x5ed9b0fb90f442fc!2sMayview%20Community%20Health%20Center!5e0!3m2!1sen!2sus!4v1660252946209!5m2!1sen!2sus",
+        "form": "/forms/Arbor_Ravenswood_Cover_Sheet.pdf"
+      },
+      "NEMS": {
+        "description": "<p>考虑到初级保健费用的可负担性，我们将您转诊至<strong><u>东北医疗中心 (North East Medical Services，简称 NEMS)</u></strong>。 他们可以提供免疫接种和转诊，并帮助您寻找其他资源。他们的收费结构是浮动的，目的是让所有患者都能负担并获得医疗服务。(注册后，患者每次就诊支付 5 至 40 美元。NEMS 还可以帮助没有保险的患者加入健康保险计划。) 您可以在随附的信息单中找到更多信息。我们会在接下来的几天内传真您的转诊信。</p>",
+        "steps": [
+          "在下周内致电 (408) 573-9686 (分机 8160)，注册加入他们的网络。有关如何注册的详细信息，请访问 <a href='https://nems.org/' rel='noopener noreferrer' target='_blank'>此网站</a>。",
+          "我们会在两周后与您联系，了解您是否能够成功注册。在确认您已经注册后，我们会随后传真我们的记录。"
+        ],
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25362.659867256756!2d-121.91728840145349!3d37.381968667146594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcc1cbab2f0ff%3A0xa454a1c3848c0b09!2sNorth%20East%20Medical%20Services%20(NEMS)!5e0!3m2!1sen!2sus!4v1660251144322!5m2!1sen!2sus",
+        "form": "/forms/Arbor_NEMS_Cover_Sheet.pdf"
+      },
+      "Gardner": {
+        "description": "<p>考虑到初级保健费用的可负担性，我们将您转诊至位于 的<strong><u>Gardner Health Center</u></strong>. Gardner 还提供心理健康治疗、牙科护理、验光、保险咨询和其他服务。</p>",
+        "steps": [
+          "请致电 (408) 457-7100，以安排您在 Gardner Health Center 的首次预约。",
+          "我们会在两周后与您联系，了解您是否已与Gardner 联系上。<strong>一旦您在 Gardner 的网络注册，</strong>我们将安全稳妥地将您的病历传真给他们以完成转诊流程。"
+        ],
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101511.34645034063!2d-121.96828842906687!3d37.33707322261956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fccc1d9c1c3f5%3A0xb4503cb37aa4170f!2sGardner%20Downtown%20Health%20Center!5e0!3m2!1sen!2sus!4v1660253356784!5m2!1sen!2sus",
+        "form": "/forms/Gardner_Cover_Sheet.pdf"
+      },
+      "Samaritan House": {
+        "description": "<p>考虑到初级保<strong><u>Samaritan House Free Clinics</u></strong>。</p>",
+        "steps": [
+          "致电 (650) 347-3648，与病案经理或诊所经理进行初步通话，他们可以根据您的需求协助转接。"
+        ],
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25333.94327572666!2d-122.21644343873042!3d37.4667916115159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fa36e73aa184b%3A0x8c34c5bb64b0ef0d!2sSamaritan%20House%20Free%20Clinic!5e0!3m2!1sen!2sus!4v1660253468943!5m2!1sen!2sus",
+        "form": "/forms/Arbor_Samaritan_House_Cover_Sheet.pdf"
+      },
+      "Alameda Health Systems": {
+        "description": "<p>考虑到初级保<strong><u>Alameda Health System</u></strong>. 如果您 (1) 是 Alameda 县居民；(2) 没有保险；并且 (3) 从未在 Alameda Health System 内就过诊，您可以在 Alameda Health System 内找一位初级保健医生。</p>",
+        "steps": [
+          "致电 (510) 437-8500，听取所有选项，预约针对初级保健医生和将来可能需要的任何专科诊所服务的一次财务咨询。",
+          "一旦您有了自己的医生后，请告知是否需要我们提供任何病历，我们很乐意提供帮助。"
+        ],
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100894.27487791162!2d-122.28076997928983!3d37.79130315438835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f8693560bc5a1%3A0x409cfa65b47d2a20!2sAlameda%20Health%20System!5e0!3m2!1sen!2sus!4v1660253590583!5m2!1sen!2sus",
+        "form": ""
+      }
     },
-    "Samaritan House": {
-      "description": "<p>You can get a Primary Care Physician (PCP) at the <strong><u>Samaritan House Free Clinics</u></strong>.</p>",
-      "steps": ["You will receive a call from Samaritan House to set up an appointment. If you do not receive a call within one week, call (650) 347-3648 to set up an appointment with one of their case managers."],
-      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25333.94327572666!2d-122.21644343873042!3d37.4667916115159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fa36e73aa184b%3A0x8c34c5bb64b0ef0d!2sSamaritan%20House%20Free%20Clinic!5e0!3m2!1sen!2sus!4v1660253468943!5m2!1sen!2sus",
-      "form": "/forms/Arbor_Samaritan_House_Cover_Sheet.pdf"
-    },
-    "Alameda Health Systems": {
-      "description": "<p>You can get a Primary Care Physician (PCP) within the <strong><u>Alameda Health System</u></strong> if you (1) reside in Alameda County, (2) are uninsured, and (3) have not been seen at Alameda Health System.</p>",
-      "steps": ["Call (510) 437-8500 and listen through the options to schedule a financial appointment for PCP and any specialty clinics you may need in the future.", "Once you connect with the doctors, let us know if they need any medical records from us and we can facilitate that process."],
-      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100894.27487791162!2d-122.28076997928983!3d37.79130315438835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f8693560bc5a1%3A0x409cfa65b47d2a20!2sAlameda%20Health%20System!5e0!3m2!1sen!2sus!4v1660253590583!5m2!1sen!2sus",
-      "form": ""
+    "Spanish": {
+      "title": "Instrucciones con respecto a las remisiones a un médico",
+      "description": "Nuestros recursos en la clínica gratuita de Cardinal son limitados y nuestra clínica está diseñada para atender pacientes solo por unas cuantas consultas mientras se les remite a una opción de atención a largo plazo. No tenemos la capacidad de ofrecer a los pacientes continuidad médica con el mismo profesional, ya que en cada visita los pacientes suelen tener un médico diferente. Un único médico de cabecera en otra clínica puede atender sus problemas de salud mucho mejor ya que lo puede atender a largo plazo.",
+      "nextsteps": "Siguientes Pasos:",
+      "Ravenswood": {
+        "description": "<p>Para que obtenga atención primaria a bajo costo, lo remitimos al centro de salud <strong><u>Ravenswood Family Health Center</u></strong>. El centro Ravenswood también cuenta con servicios de odontología, optometría, asesoramiento sobre seguros médicos y otros servicios. El centro opera con tarifas variables según una tabla de condiciones para atender a aquellos pacientes que no tienen seguro médico.</p>",
+        "steps": [
+          "Esté atento a la llamada de Ravenswood, pero si no recibe la llamada en una semana, llame usted al (650) 330-7416.",
+          "Dentro de dos semanas, haremos un seguimiento con usted para corroborar que pudo comunicarse con Ravenswood."
+        ],
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d203038.43452159798!2d-122.14419364956335!3d37.3312490400011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb64bc9cafd1f%3A0x5ed9b0fb90f442fc!2sMayview%20Community%20Health%20Center!5e0!3m2!1sen!2sus!4v1660252946209!5m2!1sen!2sus",
+        "form": "/forms/Arbor_Ravenswood_Cover_Sheet.pdf"
+      },
+      "NEMS": {
+        "description": "<p>Para que obtenga atención primaria a bajo costo, lo remitimos al centro de salud <strong><u>North East Medical Services (NEMS)</u></strong>. Ellos le pueden ayudar con asuntos como vacunaciones, derivaciones y otros recursos. Tienen tarifas variables según una tabla de condiciones para que la atención médica sea económica y accesible para todos. (Los pacientes inscritos pagan entre $5 y $40 dólares por consulta. NEMS también ayuda a los pacientes con los trámites para inscribirse en programas de seguro médico, en caso de no contar con uno). El folleto adjunto tiene más información al respecto. Nos encargaremos de enviar la remisión en los próximos días.</p>",
+        "steps": [
+          "Llame al (408)-573-9686 (extensión 8160) dentro de la próxima semana para registrarse en su red de servicios. Para obtener más información sobre cómo registrarse, consulte <a href='https://nems.org/' rel='noopener noreferrer' target='_blank'>este sitio web</a>.",
+          "Dentro de dos semanas, haremos un seguimiento con usted para corroborar que pudo registrarse bien, y en cuanto esto esté confirmado enviaremos por fax el expediente médico que tiene con nosotros a su nuevo centro médico."
+        ],
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25362.659867256756!2d-121.91728840145349!3d37.381968667146594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcc1cbab2f0ff%3A0xa454a1c3848c0b09!2sNorth%20East%20Medical%20Services%20(NEMS)!5e0!3m2!1sen!2sus!4v1660251144322!5m2!1sen!2sus",
+        "form": "/forms/Arbor_NEMS_Cover_Sheet.pdf"
+      },
+      "Gardner": {
+        "description": "<p>Para que obtenga atención primaria a bajo costo, lo remitimos al centro de salud <strong><u>Gardner Health Center</u></strong>. Gardner también ofrece tratamientos de salud mental, cuidado dental, optometría, consejería de seguros, y otros servicios.</p>",
+        "steps": [
+          "El equipo de cuidado de Gardner te llamara entre la próxima semana para regístrate en su sistema.",
+          "Si no escuchas de ellos, llama (408) 457-7100 para programar su primer cita con Gardner Health Center."
+        ],
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101511.34645034063!2d-121.96828842906687!3d37.33707322261956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fccc1d9c1c3f5%3A0xb4503cb37aa4170f!2sGardner%20Downtown%20Health%20Center!5e0!3m2!1sen!2sus!4v1660253356784!5m2!1sen!2sus",
+        "form": "/forms/Gardner_Cover_Sheet.pdf"
+      },
+      "Samaritan House": {
+        "description": "<p>Puede conseguir un médico de cabecera/atención primaria (Primary Care Physician, PCP) en las clínicas gratuitas de <strong><u>Samaritan House.</u></strong>.</p>",
+        "steps": [
+          "Recibirá una llamada de Samaritan House para concertar una cita. Si no recibe una llamada en el plazo de una semana, llame al (650) 347-3648 para concertar una cita con uno de sus gestores de casos."
+        ],
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25333.94327572666!2d-122.21644343873042!3d37.4667916115159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fa36e73aa184b%3A0x8c34c5bb64b0ef0d!2sSamaritan%20House%20Free%20Clinic!5e0!3m2!1sen!2sus!4v1660253468943!5m2!1sen!2sus",
+        "form": "/forms/Arbor_Samaritan_House_Cover_Sheet.pdf"
+      },
+      "Alameda Health Systems": {
+        "description": "<p>Para que obtenga atención primaria a bajo costo, lo remitimos al centro de salud <strong><u>Alameda Health System</u></strong>. Puede conseguir un médico de cabecera (Primary Care Physician, PCP) dentro del sistema de salud de Alameda si (1) reside en el condado de Alameda, (2) no tiene seguro médico y (3) nunca ha sido atendido en el sistema de salud de Alameda.</p>",
+        "steps": [
+          "Llame al (510) 437-8500 y según las opciones del menú, programe una cita para una evaluación financiera para un médico primario (financial appointment for PCP) y/o para cualquier clínica de especialidad que necesite en el futuro.",
+          "Una vez que ya establezca contacto con un médico, avísenos si le piden algún expediente médico que tenga con nosotros y con gusto podemos facilitárselos."
+        ],
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100894.27487791162!2d-122.28076997928983!3d37.79130315438835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f8693560bc5a1%3A0x409cfa65b47d2a20!2sAlameda%20Health%20System!5e0!3m2!1sen!2sus!4v1660253590583!5m2!1sen!2sus",
+        "form": ""
+      }
     }
   },
   "Labs": {
-    "title": "Labs Instructions",
-    "results": "<p>Your test results will be returned to the Cardinal Free Clinic, and <strong>we will call you to go over your results</strong> 1-2 weeks after we receive results, as capacity allows.</p>",
-    "location": {
-      "title": "Stanford Hospital - Boswell Clinic Laboratory",
-      "info": "<ul><li><strong>Address</strong>: 300 Pasteur Drive, Pavilion A, Level 1, A12 Stanford, CA 94305</li><li><strong>Hours</strong>: Mon-Fri 6:00am-5:30pm, Sat-Sun 7am-3:30pm</li><li><strong>Phone</strong>: (650) 724-4750</li></ul>"
+    "English": {
+      "title": "Labs Instructions",
+      "results": "<p>Your test results will be returned to the Cardinal Free Clinic, and <strong>we will call you to go over your results</strong> 1-2 weeks after we receive results, as capacity allows.</p>",
+      "location": {
+        "title": "Stanford Hospital - Boswell Clinic Laboratory",
+        "info": "<ul><li><strong>Address</strong>: 300 Pasteur Drive, Pavilion A, Level 1, A12 Stanford, CA 94305</li><li><strong>Hours</strong>: Mon-Fri 6:00am-5:30pm, Sat-Sun 7am-3:30pm</li><li><strong>Phone</strong>: (650) 724-4750</li></ul>"
+      },
+      "instructions": {
+        "fasting": "<li>Please remember to fast for 10 hours prior to visiting the lab. It is ok to drink water.</li>",
+        "noFasting": "<li>You do not need to fast.</li>",
+        "all": [
+          "You may go to the lab at any time and <strong>do not need an appointment,</strong> but we <u>recommend that you call the lab ahead of your visit</u> to make sure they have received your lab orders.",
+          "If the clinical labs cannot find your orders, let them know they were sent via fax. Please call us immediately at the phone number below and leave a message if any issues arise.",
+          "Please bring any form of <strong><u>photo identification</u></strong>.",
+          "This is a <strong>no cost</strong> service. <strong>If any billing issues come up, please call or email us</strong>."
+        ]
+      }
     },
-    "instructions": {
-      "fasting": "<li>Please remember to fast for 10 hours prior to visiting the lab. It is ok to drink water.</li>",
-      "noFasting": "<li>You do not need to fast.</li>",
-      "all": ["You may go to the lab at any time and <strong>do not need an appointment,</strong> but we <u>recommend that you call the lab ahead of your visit</u> to make sure they have received your lab orders.", "If the clinical labs cannot find your orders, let them know they were sent via fax. Please call us immediately at the phone number below and leave a message if any issues arise.", "Please bring any form of <strong><u>photo identification</u></strong>.", "This is a <strong>no cost</strong> service. <strong>If any billing issues come up, please call or email us</strong>."]
+    "Mandarin": {
+      "title": "化验室检查说明",
+      "results": "<p>您的测试结果将返回到 Cardinal Free Clinic，并且在我们收到结果后 1-2 周内<strong>我们会致电您查看结果</strong>如果容量允许。</p>",
+      "location": {
+        "title": "Stanford医院 - Boswell Clinic实验室",
+        "info": "<ul><li><strong>地址</strong>: 300 Pasteur Drive, Pavilion A, Level 1, A12 Stanford, CA 94305</li><li><strong>工作时间</strong>：周一至周五上午 6:00 至下午 5:30，周六至周日上午 7 点至下午 3:30</li><li><strong>电话</strong>：(650) 724-4750 </li></ul>"
+      },
+      "instructions": {
+        "fasting": "<li>请记住在前往化验室检测之前禁食 10 小时，可以喝水。</li>",
+        "noFasting": "<li>请记得您不需要禁食。</li>",
+        "all": [
+          "您可以随时前往实验室，并且<strong>不需要预约</strong>，但我们<u>建议您在访问之前致电实验室</u>，以确保他们已收到您的实验室订单。",
+          "如果临床实验室找不到您的订单，请告知他们这些订单是通过传真发送的。 如果出现任何问题，请立即拨打以下电话号码联系我们并留言。",
+          "请携带任何形式的<strong><u>带照片的身份证明</u></strong>。",
+          "这是一项<strong>免费</strong>服务。 <strong>如果出现任何结算问题，请致电或发送电子邮件给我们</strong>。"
+        ]
+      }
+    },
+    "Spanish": {
+      "title": "Instrucciones de Laboratorio",
+      "results": "<p>Los resultados de su prueba se devolverán a Cardinal Free Clinic y <strong>lo llamaremos para revisarlos</strong> 1 o 2 semanas después de recibirlos, según lo permita la capacidad.</p>",
+      "location": {
+        "title": "Hospital Stanford - Boswell Clinic Laboratorio",
+        "info": "<ul><li><strong>Dirección</strong>: 300 Pasteur Drive, Pavilion A, Level 1, A12 Stanford, CA 94305</li><li><strong>Horario</strong>: lunes a viernes 6:00 am-5:30 pm, sábados y domingos 7am-3:30 pm</li><li><strong>Teléfono</strong>: (650) 724-4750</li></ul>"
+      },
+      "instructions": {
+        "fasting": "<li>Recuerde ayunar durante 10 horas antes de visitar el laboratorio. Está bien beber agua.</li>",
+        "noFasting": "<li>No necesitas ayunar.</li>",
+        "all": [
+          "Puede ir al laboratorio en cualquier momento y <strong>no necesita una cita</strong>, pero <u>recomendamos que llame al laboratorio antes de su visita</u> para asegurarse de que hayan recibido sus pedidos de laboratorio.",
+          "Si los laboratorios clínicos no pueden encontrar sus pedidos, infórmeles que fueron enviados por fax. Llámenos inmediatamente al número de teléfono que aparece a continuación y deje un mensaje si surge algún problema.",
+          "Traiga cualquier tipo de <strong><u>identificación con fotografía</u></strong>.",
+          "Este es un servicio <strong>sin costo</strong>. <strong>Si surge algún problema de facturación, llámenos o envíenos un correo electrónico</strong>."
+        ]
+      }
     }
-  }, 
+  },
   "Imaging": {
-    "title": "Imaging Instructions",
-    "results": "<p>Your test results will be returned to the Cardinal Free Clinics, and <strong>we will call you to go over your results</strong> 1-2 weeks after we receive results, as capacity allows.</p>",
-    "location": {
-      "title": "Stanford Hospital – Radiology Registration",
-      "info": "<ul><li><strong>Address</strong>: 300 Pasteur Drive, Pavilion E, Level 1, E12, Stanford, CA 94305</li><li><strong>Hours</strong>: Mon-Fri 6:45AM-5:00PM</li><li><strong>Directions</strong>: Please enter through the main hospital entrance near the fountain. Immediately after entering, take a left and proceed past the cafeteria. Turn to the left when you see the “Radiology Registration” sign (E12).</li></ul>"
+    "English": {
+      "title": "Imaging Instructions",
+      "results": "<p>Your test results will be returned to the Cardinal Free Clinics, and <strong>we will call you to go over your results</strong> 1-2 weeks after we receive results, as capacity allows.</p>",
+      "location": {
+        "title": "Stanford Hospital – Radiology Registration",
+        "info": "<ul><li><strong>Address</strong>: 300 Pasteur Drive, Pavilion E, Level 1, E12, Stanford, CA 94305</li><li><strong>Hours</strong>: Mon-Fri 6:45AM-5:00PM</li><li><strong>Directions</strong>: Please enter through the main hospital entrance near the fountain. Immediately after entering, take a left and proceed past the cafeteria. Turn to the left when you see the “Radiology Registration” sign (E12).</li></ul>"
+      },
+      "instructions": {
+        "all": [
+          "<strong>Please bring any form of <u>photo identification</u></strong>.",
+          "This is a no cost service. <strong>If any <u>billing issues</u> come up, please call or email us</strong>.",
+          "If any issues arise, please call us immediately at the phone number below and leave a message."
+        ],
+        "options": [
+          "<span>If you are getting an <strong>X-ray</strong></span>, you may go to the imaging clinic at any time and <strong>do not need an appointment</strong>.<br /><strong>IMPORTANT</strong>: Please bring a printed copy of the imaging order you received from the Cardinal Free Clinics to your appointment.",
+          "<span>If you are getting an <strong>CT/MRI/ultrasound</strong></span>, you will need to <strong>make an appointment</strong> at the imaging clinic. Please wait for Stanford Hospital to call you to make an appointment. If you have not received a call within a week, please call Stanford Radiology Scheduling at (650) 723-6855."
+        ],
+        "choose": {
+          "If you are getting an <strong>X-ray</strong>, ": "you may go to the imaging clinic at any time and <strong>do not need an appointment</strong>. <br/> <strong>IMPORTANT</strong>: Please bring a printed copy of the imaging order you received from the Cardinal Free Clinics to your appointment.",
+          "If you are getting an <strong>CT/MRI/ultrasound</strong>, ": "you will need to <strong>make an appointment</strong> at the imaging clinic. Please wait for Stanford Hospital to call you to make an appointment. If you have not received a call within a week, please call Stanford Radiology Scheduling at (650) 723-6855."
+        }
+      }
     },
-    "instructions": {
-      "all": ["<strong>Please bring any form of <u>photo identification</u></strong>.", "This is a no cost service. <strong>If any <u>billing issues</u> come up, please call or email us</strong>.", "If any issues arise, please call us immediately at the phone number below and leave a message."],
-      "options": ["<span>If you are getting an <strong>X-ray</strong></span>, you may go to the imaging clinic at any time and <strong>do not need an appointment</strong>.<br /><strong>IMPORTANT</strong>: Please bring a printed copy of the imaging order you received from the Cardinal Free Clinics to your appointment.", "<span>If you are getting an <strong>CT/MRI/ultrasound</strong></span>, you will need to <strong>make an appointment</strong> at the imaging clinic. Please wait for Stanford Hospital to call you to make an appointment. If you have not received a call within a week, please call Stanford Radiology Scheduling at (650) 723-6855."],
-      "choose": {
-        "If you are getting an <strong>X-ray</strong>, ": "you may go to the imaging clinic at any time and <strong>do not need an appointment</strong>. <br/> <strong>IMPORTANT</strong>: Please bring a printed copy of the imaging order you received from the Cardinal Free Clinics to your appointment.",
-        "If you are getting an <strong>CT/MRI/ultrasound</strong>, ": "you will need to <strong>make an appointment</strong> at the imaging clinic. Please wait for Stanford Hospital to call you to make an appointment. If you have not received a call within a week, please call Stanford Radiology Scheduling at (650) 723-6855."
+    "Mandarin": {
+      "title": "影像学检查说明",
+      "results": "<p>您的测试结果将返回到 Cardinal Free Clinic，并且在收到结果后 1-2 周内<strong>我们会致电您查看结果</strong>如果容量允许。</p>",
+      "location": {
+        "title": "Stanford医院 – 放射科注册",
+        "info": "<ul><li><strong>地址</strong>: 300 Pasteur Drive, Pavilion E, Level 1, E12, Stanford, CA 94305</li><li><strong>时间</strong>：周一至周五 6:45AM-5:00PM</li><li><strong>路线</strong>：请从喷泉附近的医院主入口进入。 进入后立即左转，经过自助餐厅。 当您看到“放射科登记”标志（E12）时向左转。</li></ul>"
+      },
+      "instructions": {
+        "all": [
+          "<strong>请携带任何形式的<u>带照片的身份证明</u></strong>。",
+          "这是一项免费服务。 <strong>如果出现任何<u>结算问题</u>，请致电或发送电子邮件给我们</strong>。",
+          "如果出现任何问题，请立即拨打以下电话号码联系我们并留言。"
+        ],
+        "options": [
+          "<span>如果您要做<strong>X光检查</strong></span>，您可以随时前往影像诊所，<strong>不需要预约</strong>。<br/><strong>重要提示</strong>：前往检查时请携带一份您从 Cardinal Free Clinic 收到的影像检验单的打印副本。",
+          "<span>如果您要接受<strong>CT/MRI/超声检查</strong></span>，您需要在影像诊所<strong>预约</strong>。 请等待斯坦福医院给您打电话预约。 如果您在一周内没有接到电话，请致电斯坦福放射科调度中心：(650) 723-6855。"
+        ],
+        "choose": {
+          "If you are getting an <strong>X-ray</strong>, ": "您可以随时前往影像诊所，<strong>不需要预约</strong>。<br/><strong>重要提示</strong>：前往检查时请携带一份您从 Cardinal Free Clinic 收到的影像检验单的打印副本。",
+          "If you are getting an <strong>CT/MRI/ultrasound</strong>, ": "您需要在影像诊所<strong>预约</strong>。 请等待斯坦福医院给您打电话预约。 如果您在一周内没有接到电话，请致电斯坦福放射科调度中心：(650) 723-6855。"
+        }
+      }
+    },
+    "Spanish": {
+      "title": "Instrucciones sobre los Estudios por Imagen",
+      "results": "<p>Los resultados de su prueba se enviarán a Cardinal Free Clinics y <strong>lo llamaremos para revisarlos</strong> 1 o 2 semanas después de recibirlos, según lo permita la capacidad.</p>",
+      "location": {
+        "title": "Hospital Stanford – Registro de Radiología",
+        "info": "<ul><li><strong>Dirección</strong>: 300 Pasteur Drive, Pavilion E, Level 1, E12, Stanford, CA 94305</li><li><strong>Horario</strong>: de lunes a viernes 6:45 a. m. a 5:00 p. m.</li><li><strong>Indicaciones</strong>: ingrese por la entrada principal del hospital cerca de la fuente. Inmediatamente después de entrar, gire a la izquierda y pase la cafetería. Gire a la izquierda cuando vea el cartel de “Registro de Radiología” (E12).</li></ul>"
+      },
+      "instructions": {
+        "all": [
+          "<strong>Traiga cualquier forma de <u>identificación con fotografía</u></strong>.",
+          "Este es un servicio sin costo. <strong>Si surge algún <u>problema de facturación</u>, llámenos o envíenos un correo electrónico</strong>.",
+          "Si surge algún problema, llámenos inmediatamente al número de teléfono que aparece a continuación y deje un mensaje."
+        ],
+        "options": [
+          "<span>Si le van a hacer una <strong>radiografía</strong></span>, puede ir a la clínica de imágenes en cualquier momento y <strong>no necesita una cita</strong>.<br / ><strong>IMPORTANTE</strong>: Lleve a su cita una copia impresa de la orden de imágenes que recibió de Cardinal Free Clinics.",
+          "<span>Si le van a realizar una <strong>CT/MRI/ultrasonido</strong></span>, deberá <strong>programar una cita</strong> en la clínica de imágenes. Espere a que Stanford Hospital lo llame para programar una cita. Si no ha recibido una llamada dentro de una semana, llame a Stanford Radiology Scheduling al (650) 723-6855."
+        ],
+        "choose": {
+          "If you are getting an <strong>X-ray</strong>, ": "puede ir a la clínica de imágenes en cualquier momento y <strong>no necesita una cita</strong>.<br / ><strong>IMPORTANTE</strong>: Lleve a su cita una copia impresa de la orden de imágenes que recibió de Cardinal Free Clinics.",
+          "If you are getting an <strong>CT/MRI/ultrasound</strong>, ": "deberá <strong>programar una cita</strong> en la clínica de imágenes. Espere a que Stanford Hospital lo llame para programar una cita. Si no ha recibido una llamada dentro de una semana, llame a Stanford Radiology Scheduling al (650) 723-6855."
+        }
       }
     }
   }

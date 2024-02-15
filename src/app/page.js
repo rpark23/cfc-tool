@@ -140,10 +140,16 @@ export default function Home() {
             <p className="text-sm font-medium">GoodRx</p>
             <ExternalLinkIcon className="ml-2" />
           </a>
+
+          <a className="flex items-center justify-center mt-2 w-60 border border-solid rounded-md py-2 hover:bg-slate-100	"
+          href="https://drive.google.com/drive/folders/1Y0uLEhgWAAsgMIUUDbJjJwWxt_-xdGwV?usp=drive_link" target="_blank">
+            <p className="text-sm font-medium">AVS Templates</p>
+            <ExternalLinkIcon className="ml-2" />
+          </a>
         </ToggleGroup>
       </div>
       {view ? 
-        <View view={view} pcp={pcp} clinic={clinic}/> : null}
+        <View view={view} pcp={pcp} language={language} clinic={clinic}/> : null}
     </main>
   );
 }

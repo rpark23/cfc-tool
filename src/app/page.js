@@ -146,6 +146,12 @@ export default function Home() {
             <p className="text-sm font-medium">AVS Templates</p>
             <ExternalLinkIcon className="ml-2" />
           </a>
+
+          <a className="flex items-center justify-center mt-2 w-60 border border-solid rounded-md py-2 hover:bg-slate-100	"
+          href="https://drive.google.com/drive/folders/11uzrEwQ-1Wv0AChnF-Hcy8q9yGwmJxYV?usp=drive_link" target="_blank">
+            <p className="text-sm font-medium">Workflow Guides</p>
+            <ExternalLinkIcon className="ml-2" />
+          </a>
         </ToggleGroup>
       </div>
       {view ? 

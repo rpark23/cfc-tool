@@ -40,7 +40,7 @@ export default function Home() {
 
   useEffect(() => {
     if (county=="Santa Clara County, CA" && (language=="English")) {
-      setPCP("Ravenswood");
+      setPCP("Gardner");
     } else if (county=="Santa Clara County, CA" && language=="Mandarin") {
       setPCP("NEMS");
     } else if (county=="Santa Clara County, CA" && language=="Spanish") {

@@ -61,7 +61,7 @@ export default function View(props) {
           } 
           {pcp == "Alameda Health Systems" ? null : 
           <a className="flex items-center absolute top-8 right-12 bg-cardinal px-4 py-2 rounded-md text-white hover: cursor-pointer"
-          href={`/forms/${clinic}_${pcp.replace(" ", "_")}_Cover_Sheet.pdf`} target="_blank">Cover Sheet <ExternalLinkIcon className="ml-2" /></a>}
+          href={'https://drive.google.com/drive/u/0/folders/10F8mMgZk3S3_WXKhhTfj8lRC89xXUxGk'} target="_blank">Cover Sheet <ExternalLinkIcon className="ml-2" /></a>}
           <div>
             <p>{info[view][pageLanguage].description}</p>
             <div className="flex">
